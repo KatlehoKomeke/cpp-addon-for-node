@@ -11,10 +11,13 @@ console.log("\n");
 
 const js_calc = ()=>{
     let count = 0;
-    for (let i = 0; i < 900000000; i++) {
+    for (let i = 0; i < 9999999; i++) {
         count += i;
+        console.log(count);
     }
-    console.log("Sum of integers from 0 to "+900000000+" in js = "+count);
+    console.log("Sum of integers from 0 to "+ 9999999 +" in js = "+count);
+    console.log("Javascript's largest safe integer: ",Number.MAX_SAFE_INTEGER);
+    console.log("Javascript's largest possible number: ",Number.MAX_VALUE);
 }
 
 const node = "node 17";
