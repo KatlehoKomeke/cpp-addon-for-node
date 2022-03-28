@@ -10,11 +10,14 @@
 using namespace v8;
 
 NAN_METHOD(calc) {
-  unsigned long long int count = 0;
-  for (unsigned long long int i = 0; i < 900000000; i++) {
+  unsigned long long count = 0;
+  for (unsigned long long i = 0; i < 9999999; i++) {
     count += i;
+    std::cout<< count <<"\n";
   }
-  std::cout<<"Sum of integers from 0 to "<< 900000000<<" in c++ ="<< count <<"\n";
+  std::cout<<"Sum of integers from 0 to "<< 9999999 <<" in c++ = "<< count <<"\n";
+  std::cout<<"c++'s largest possible integer "<< ULLONG_MAX <<"\n";
+  std::cout<<"c++'s largest possible integer "<< ULLONG_MAX <<"\n";
 }
 
 NAN_MODULE_INIT(init) {
