@@ -6,7 +6,7 @@
 
 // V8 is the engine that node is running on
 // so we are using the namespace of V8 to 
-// ensure that the compilation compatible.
+// ensure that the compilation is compatible.
 using namespace v8;
 
 NAN_METHOD(calc) {
