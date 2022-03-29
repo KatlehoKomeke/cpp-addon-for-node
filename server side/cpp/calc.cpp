@@ -17,7 +17,6 @@ NAN_METHOD(calc) {
   }
   std::cout<<"Sum of integers from 0 to "<< 9999999 <<" in c++ = "<< count <<"\n";
   std::cout<<"c++'s largest possible integer "<< ULLONG_MAX <<"\n";
-  std::cout<<"c++'s largest possible integer "<< ULLONG_MAX <<"\n";
 }
 
 NAN_MODULE_INIT(init) {
